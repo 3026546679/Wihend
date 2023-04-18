@@ -14,7 +14,7 @@ git commit -m 'master'
 git push origin master
 // 此时已经完成master主分支项目提交了
 # 创建仓库
-git checkout --orphan
+git checkout --orphan name
 #  创建完毕，如果默认继承了master tree，这时需要清除索引和工作树，继续执行：
 git rm -rf . // 注意后面的点
 # 这里假设新分支名称为：next-branch
