@@ -27,3 +27,24 @@ git push origin next-branch
 
 # 切换仓库
 git checkout name
+
+
+# 有一些分支克隆了带有git的仓库 怎么移除
+
+查阅来源 https://blog.csdn.net/xiebaochun/article/details/114143346
+
+.git文件夹通常是隐藏的。您可以在终端中使用命令行来查看和删除它。
+例如，在macOS上，您可以打开终端，然后使用cd命令进入到包含.git文件夹的目录，然后使用ls -a命令查看所有文件和文件夹，包括隐藏的文件夹。
+您可以使用rm -rf .git命令删除.git文件夹。
+
+1、删除文件夹里面的.git文件夹
+
+2、执行git rm --cached [文件夹名]
+
+3、执行git add [文件夹名]
+
+4、执行git commit -m "msg"
+
+5、执行git push origin [branch_name]
+
+
